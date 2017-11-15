@@ -1,0 +1,220 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F3B070C4812F03E1841839178F6E83025E139608C0F1E7E /* lua_cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D6EC4302C086F866F7CC1CC522E9F38848AEBBFB93595C6 /* lua_cjson.c */; };
+		7337F8D6AFA4E40EE13675DE06324E809A85776FDEAB624E /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = BEB2EAEA3A1E095696346FE13D8EDB888527C251BEFB7F96 /* strbuf.c */; };
+		9E324B2ACC4E73FAC30C83222DBDE6CC57FC9C3FB54F23A /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2C698EB4CA082E0644B8FEEBD72B4CF579E00702A16C2 /* fpconv.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6D6EC4302C086F866F7CC1CC522E9F38848AEBBFB93595C6 /* lua_cjson.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = lua_cjson.c; path = ../lua_cjson.c; sourceTree = "<group>"; };
+		8E2C698EB4CA082E0644B8FEEBD72B4CF579E00702A16C2 /* fpconv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fpconv.c; path = ../fpconv.c; sourceTree = "<group>"; };
+		B5436C3118B9EDE08CC4F1281C2AC0127BB843989D976420 /* strbuf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = strbuf.h; path = ../strbuf.h; sourceTree = "<group>"; };
+		BEB2EAEA3A1E095696346FE13D8EDB888527C251BEFB7F96 /* strbuf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = strbuf.c; path = ../strbuf.c; sourceTree = "<group>"; };
+		D7DDA1F1FCD8758C9F8FC5C96E638DFE6CED664A1D64B3CC /* libcjson.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libcjson.a; path = libcjson.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E281962926D1F0E2F07F324F4D01A2F7FEA925B653F830 /* lua_cjson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = lua_cjson.h; path = ../lua_cjson.h; sourceTree = "<group>"; };
+		FF7347DFC9E8850CD6F4CCD6CD59573EC5E81F474EC5FB4C /* fpconv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fpconv.h; path = ../fpconv.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A5D4D4CB9F584FC1C881527C6B2346E452827FC3B9CA33C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8A66E3C31E65EDD5E4ABFD6CC02D34FA27E8D5A183E1D1D /* cjson */ = {
+			isa = PBXGroup;
+			children = (
+				8E2C698EB4CA082E0644B8FEEBD72B4CF579E00702A16C2 /* fpconv.c */,
+				FF7347DFC9E8850CD6F4CCD6CD59573EC5E81F474EC5FB4C /* fpconv.h */,
+				6D6EC4302C086F866F7CC1CC522E9F38848AEBBFB93595C6 /* lua_cjson.c */,
+				E0E281962926D1F0E2F07F324F4D01A2F7FEA925B653F830 /* lua_cjson.h */,
+				BEB2EAEA3A1E095696346FE13D8EDB888527C251BEFB7F96 /* strbuf.c */,
+				B5436C3118B9EDE08CC4F1281C2AC0127BB843989D976420 /* strbuf.h */,
+				DE2FD571A6C936B48E134D4D9B3FADE6BA17F9BDEA134CF4 /* Products */,
+			);
+			name = cjson;
+			sourceTree = "<group>";
+		};
+		DE2FD571A6C936B48E134D4D9B3FADE6BA17F9BDEA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7DDA1F1FCD8758C9F8FC5C96E638DFE6CED664A1D64B3CC /* libcjson.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63A271567661CBF23B23F64D79D29E242A1748BDFB3F4232 /* cjson */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A5D4D4BA830CD5B1C881526B4ED7CCD452827FB29D7EB9B /* Build configuration list for PBXNativeTarget "cjson" */;
+			buildPhases = (
+				7A5D4D5029DD059C1C88152B3699B50E452827FFAB8423DC /* Resources */,
+				7A5D4D50938A1EF31C88152BA046CE654528280015313D33 /* Sources */,
+				7A5D4D4CB9F584FC1C881527C6B2346E452827FC3B9CA33C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cjson;
+			productName = cjson;
+			productReference = D7DDA1F1FCD8758C9F8FC5C96E638DFE6CED664A1D64B3CC /* libcjson.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "cjson" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = A8A66E3C31E65EDD5E4ABFD6CC02D34FA27E8D5A183E1D1D /* cjson */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63A271567661CBF23B23F64D79D29E242A1748BDFB3F4232 /* libcjson.a */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A5D4D5029DD059C1C88152B3699B50E452827FFAB8423DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A5D4D50938A1EF31C88152BA046CE654528280015313D33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E324B2ACC4E73FAC30C83222DBDE6CC57FC9C3FB54F23A /* fpconv.c in Sources */,
+				3F3B070C4812F03E1841839178F6E83025E139608C0F1E7E /* lua_cjson.c in Sources */,
+				7337F8D6AFA4E40EE13675DE06324E809A85776FDEAB624E /* strbuf.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1901C7A3FD2AE5462D6FAEAAA0766E7884002B5BBB473B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/luajit-2.0",
+					"$(inherited)",
+				);
+				OBJROOT = obj/Release;
+				ONLY_ACTIVE_ARCH = NO;
+				SYMROOT = ../lib;
+			};
+			name = Release;
+		};
+		932E7A22CA2CD80CD7234B551A406CBEDC276C5B9CBE9E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/luajit-2.0",
+					"$(inherited)",
+				);
+				OBJROOT = obj/Debug;
+				ONLY_ACTIVE_ARCH = YES;
+				SYMROOT = ../lib;
+			};
+			name = Debug;
+		};
+		9967EBBE0958C2A176668C55FE62D13C0B56A57385F40E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../lib;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = cjson;
+			};
+			name = Debug;
+		};
+		B5C70357095709DB9D58DF8E38E8D8CDE66E8CF813F6181B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../lib;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = cjson;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "cjson" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932E7A22CA2CD80CD7234B551A406CBEDC276C5B9CBE9E4C /* Debug */,
+				1901C7A3FD2AE5462D6FAEAAA0766E7884002B5BBB473B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7A5D4D4BA830CD5B1C881526B4ED7CCD452827FB29D7EB9B /* Build configuration list for PBXNativeTarget "libcjson.a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9967EBBE0958C2A176668C55FE62D13C0B56A57385F40E1 /* Debug */,
+				B5C70357095709DB9D58DF8E38E8D8CDE66E8CF813F6181B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

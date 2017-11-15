@@ -6,12 +6,12 @@
 package lua
 
 /*
-#cgo CFLAGS: -I ${SRCDIR}/lua
+#cgo CFLAGS: -I /usr/local/include/luajit-2.0 -L/usr/local/lib
 #cgo llua LDFLAGS: -llua
 #cgo luaa LDFLAGS: -llua -lm -ldl
 #cgo luajit LDFLAGS: -lluajit-5.1
 #cgo linux,!llua,!luaa,!luajit LDFLAGS: -llua5.1
-#cgo darwin,!luaa,!luajit pkg-config: lua5.1
+#cgo darwin LDFLAGS: -lluajit-5.1.2.0.5 -L/Users/john/proj/work_goDev/src/github.com/aarzilli/golua/cjson/lib -lcjson
 #cgo freebsd,!luaa,!luajit LDFLAGS: -llua-5.1
 #cgo windows,!llua,!luajit LDFLAGS: -L${SRCDIR} -llua -lmingwex -lmingw32
 
@@ -629,6 +629,11 @@ func (L *State) OpenTable() {
 // Calls luaopen_os
 func (L *State) OpenOS() {
 	C.clua_openos(L.s)
+}
+
+// Calls luaopen_cjson
+func (L *State) OpenCJson() {
+	C.clua_opencjson(L.s)
 }
 
 // Sets the maximum number of operations to execute at instrNumber, after this the execution ends

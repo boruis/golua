@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "_cgo_export.h"
+#include "../cjson/lua_cjson.h"
 
 #define MT_GOFUNCTION "GoLua.GoFunction"
 #define MT_GOINTERFACE "GoLua.GoInterface"
@@ -377,6 +378,13 @@ void clua_openos(lua_State* L)
 {
 	lua_pushcfunction(L,&luaopen_os);
 	lua_pushstring(L,"os");
+	lua_call(L, 1, 0);
+}
+
+void clua_opencjson(lua_State* L)
+{
+	lua_pushcfunction(L,&luaopen_cjson_safe);
+	lua_pushstring(L,"cjson");
 	lua_call(L, 1, 0);
 }
 
