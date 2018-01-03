@@ -10,7 +10,7 @@ package lua
 #cgo llua LDFLAGS: -llua
 #cgo luaa LDFLAGS: -llua -lm -ldl
 #cgo luajit LDFLAGS: -lluajit-5.1
-#cgo linux,!llua,!luaa,!luajit LDFLAGS: -llua5.1
+#cgo linux,!llua,!luaa,!luajit LDFLAGS: -llua -L/home/GoProject/src/moqikaka.com/vendor/github.com/aarzilli/golua/cjson/lib -lcjson
 #cgo darwin LDFLAGS: -lluajit-5.1.2.0.5 -L/Users/john/proj/work_goDev/src/github.com/aarzilli/golua/cjson/lib -lcjson
 #cgo freebsd,!luaa,!luajit LDFLAGS: -llua-5.1
 #cgo windows,!llua,!luajit LDFLAGS: -L${SRCDIR} -llua -lmingwex -lmingw32
