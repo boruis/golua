@@ -1416,7 +1416,6 @@ int luaopen_cjson(lua_State *l)
 
 int luaopen_cjson_safe(lua_State *l)
 {
-    printf("test in luaopen_cjson\n");
     lua_cjson_safe_new(l);
 
     /* Return cjson.safe table */
